@@ -39,9 +39,6 @@ fun main() {
                 get("/course/top") {
                     call.respondText("HELLO WORLD!")
                 }
-                get("/course/1") {
-                    call.respond(mapOf(course1 to true))
-                }
             }
         }
         server.start(wait = true)
